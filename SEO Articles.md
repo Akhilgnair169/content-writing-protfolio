@@ -13,7 +13,7 @@ f)Content Research and Structuring
 
 Top blog posts tarketing Calicut/Kozhikode locality:
 
-[Kozhikode Wayanad Tunnel Road](https://www.homes247.in/blogs/kozhikode-wayanad-tunnel-road-802)
-[Palakkad Kozhikode Greenfield Highway](https://www.homes247.in/blogs/palakkad-kozhikode-greenfield-highway-829)
-[Kozhikode - The First City od Linterature in India](https://www.homes247.in/blogs/kozhikode-first-city-of-literature-in-india-795)
-[Best Restaurants in Calicut](https://www.homes247.in/blogs/street-food-and-restaurants-in-calicut-634)
+1. [Kozhikode Wayanad Tunnel Road](https://www.homes247.in/blogs/kozhikode-wayanad-tunnel-road-802)
+2. [Palakkad Kozhikode Greenfield Highway](https://www.homes247.in/blogs/palakkad-kozhikode-greenfield-highway-829)
+4. [Kozhikode - The First City od Linterature in India](https://www.homes247.in/blogs/kozhikode-first-city-of-literature-in-india-795)
+5. [Best Restaurants in Calicut](https://www.homes247.in/blogs/street-food-and-restaurants-in-calicut-634)
