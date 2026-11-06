@@ -2,7 +2,7 @@ This section brings together a collection of SEO-focused articles covering techn
 Each piece reflects my approach to keyword research, search intent, content structuring and writing informative, reader-friendly content.
 The objective is simple: create content that answers what people are searching for while keeping it natural, relevant and easy to understand.
 
-Areas of Focus:
+##Areas of Focus:
 
 - Search Engine Optimisation (SEO)
 - Keyword Research
@@ -11,7 +11,7 @@ Areas of Focus:
 - Long-form Blog Writing
 - Content Research and Structuring
 
-Top blog posts tarketing Calicut/Kozhikode locality:
+##Top blog posts targeting Calicut/Kozhikode locality:
 
 1. [Kozhikode Wayanad Tunnel Road](https://www.homes247.in/blogs/kozhikode-wayanad-tunnel-road-802)
 2. [Palakkad Kozhikode Greenfield Highway](https://www.homes247.in/blogs/palakkad-kozhikode-greenfield-highway-829)
