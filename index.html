@@ -1,51 +1,1488 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akhil G Nair | Content Writer</title>
-    <meta name="description" content="Akhil G Nair's writing portfolio, featuring SEO articles, technology blogs, business content and creative writing.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Akhil G Nair | Content Writer & Storyteller</title>
+
+  <meta name="description" content="The personal portfolio of Akhil G Nair, a content writer focused on SEO, business, technology and creative storytelling.">
+  <meta name="author" content="Akhil G Nair">
+  <meta name="theme-color" content="#f6f5ef">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --paper: #f6f5ef;
+      --paper-dark: #eeede5;
+      --ink: #202d27;
+      --muted: #737a70;
+      --green: #314c3e;
+      --green-light: #dce5dc;
+      --orange: #c77b50;
+      --line: #deded4;
+      --white: #fffefa;
+      --serif: "Playfair Display", Georgia, serif;
+      --sans: "DM Sans", Arial, sans-serif;
+      --max-width: 1160px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 90px;
+    }
+
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--sans);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      font: inherit;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    .container {
+      width: min(var(--max-width), calc(100% - 64px));
+      margin: auto;
+    }
+
+    .eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--green);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2.4px;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 25px;
+      height: 1px;
+      background: var(--orange);
+    }
+
+    .section-heading {
+      font-family: var(--serif);
+      font-size: clamp(36px, 5vw, 54px);
+      font-weight: 400;
+      letter-spacing: -1.5px;
+      line-height: 1.15;
+    }
+
+    .section-heading em {
+      color: var(--green);
+      font-weight: 400;
+    }
+
+    .section-intro {
+      color: var(--muted);
+      max-width: 550px;
+      font-size: 15px;
+      margin-top: 16px;
+    }
+
+    /* Navigation */
+
+    .navbar {
+      height: 84px;
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid var(--line);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(246, 245, 239, 0.93);
+      backdrop-filter: blur(16px);
+    }
+
+    .nav-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand {
+      font-family: var(--serif);
+      font-size: 25px;
+      font-weight: 600;
+      letter-spacing: -1px;
+    }
+
+    .brand span {
+      color: var(--orange);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: #59635b;
+      font-size: 12px;
+      font-weight: 600;
+      transition: color .25s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--orange);
+    }
+
+    .nav-contact {
+      border: 1px solid var(--green);
+      padding: 10px 19px;
+      border-radius: 3px;
+      color: var(--green) !important;
+    }
+
+    .nav-contact:hover {
+      background: var(--green);
+      color: white !important;
+    }
+
+    .menu-toggle {
+      display: none;
+      border: 0;
+      background: transparent;
+      color: var(--green);
+      font-size: 25px;
+      cursor: pointer;
+    }
+
+    /* Hero */
+
+    .hero {
+      padding: 90px 0 105px;
+      min-height: 680px;
+      display: flex;
+      align-items: center;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      align-items: center;
+      gap: 75px;
+    }
+
+    .hero-copy {
+      animation: rise .8s ease both;
+    }
+
+    .hero-location {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      color: var(--muted);
+      font-size: 12px;
+      margin-bottom: 28px;
+    }
+
+    .location-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #83a17d;
+      box-shadow: 0 0 0 4px #e3e9df;
+    }
+
+    .hero h1 {
+      font-family: var(--serif);
+      font-size: clamp(53px, 7vw, 83px);
+      font-weight: 400;
+      line-height: 1.06;
+      letter-spacing: -3.5px;
+      max-width: 680px;
+    }
+
+    .hero h1 em {
+      color: var(--green);
+      font-weight: 400;
+    }
+
+    .hero-description {
+      max-width: 490px;
+      margin-top: 27px;
+      color: #70766e;
+      font-size: 15px;
+      line-height: 1.95;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 25px;
+      margin-top: 35px;
+    }
+
+    .button-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      padding: 14px 23px;
+      background: var(--green);
+      color: white;
+      font-size: 12px;
+      font-weight: 600;
+      border: 1px solid var(--green);
+      border-radius: 3px;
+      transition: .25s ease;
+    }
+
+    .button-primary:hover {
+      background: var(--ink);
+      transform: translateY(-3px);
+    }
+
+    .text-link {
+      color: var(--green);
+      font-size: 12px;
+      font-weight: 700;
+      border-bottom: 1px solid #a8b5a9;
+      padding-bottom: 5px;
+    }
+
+    .hero-visual {
+      position: relative;
+      max-width: 390px;
+      width: 100%;
+      justify-self: end;
+      animation: rise .9s .15s ease both;
+    }
+
+    .portrait-frame {
+      position: relative;
+      background: #e5e1d5;
+      padding: 13px;
+      transform: rotate(2deg);
+      box-shadow: 0 25px 65px rgba(32, 45, 39, .10);
+    }
+
+    .portrait-frame img {
+      width: 100%;
+      height: 465px;
+      object-fit: cover;
+      object-position: center;
+      background: #e7e3d9;
+    }
+
+    .portrait-note {
+      position: absolute;
+      left: -42px;
+      bottom: 35px;
+      background: var(--white);
+      padding: 16px 21px;
+      box-shadow: 0 12px 30px rgba(32, 45, 39, .09);
+      transform: rotate(-3deg);
+    }
+
+    .portrait-note small {
+      display: block;
+      color: var(--muted);
+      font-size: 9px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+
+    .portrait-note strong {
+      font-family: var(--serif);
+      font-size: 19px;
+      font-weight: 400;
+    }
+
+    .hero-decoration {
+      position: absolute;
+      width: 115px;
+      height: 115px;
+      border: 1px solid #c8d2c5;
+      border-radius: 50%;
+      top: -37px;
+      right: -35px;
+      z-index: -1;
+    }
+
+    /* Intro strip */
+
+    .intro-strip {
+      background: var(--green);
+      color: #f7f6ef;
+      padding: 27px 0;
+    }
+
+    .strip-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .strip-inner span {
+      font-family: var(--serif);
+      font-size: clamp(16px, 2vw, 22px);
+      font-style: italic;
+      opacity: .94;
+    }
+
+    .strip-symbol {
+      color: #d3a17e;
+      font-size: 22px;
+    }
+
+    /* About */
+
+    .about {
+      padding: 125px 0;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: .75fr 1.25fr;
+      gap: 100px;
+    }
+
+    .about-label {
+      padding-top: 12px;
+    }
+
+    .about-content p {
+      color: #69736b;
+      font-size: 15px;
+      line-height: 2;
+      margin-top: 22px;
+    }
+
+    .about-content p:first-of-type {
+      color: var(--ink);
+      font-size: 18px;
+    }
+
+    .about-signature {
+      margin-top: 30px;
+      color: var(--green);
+      font-family: var(--serif);
+      font-size: 27px;
+      font-style: italic;
+    }
+
+    /* Skills */
+
+    .expertise {
+      background: var(--paper-dark);
+      padding: 110px 0;
+    }
+
+    .expertise-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 35px;
+      margin-bottom: 55px;
+    }
+
+    .expertise-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: #d9d9cf;
+      border: 1px solid #d9d9cf;
+    }
+
+    .expertise-card {
+      background: var(--paper-dark);
+      padding: 37px 30px;
+      min-height: 240px;
+      transition: background .3s ease;
+    }
+
+    .expertise-card:hover {
+      background: var(--white);
+    }
+
+    .card-number {
+      color: var(--orange);
+      font-family: var(--serif);
+      font-size: 17px;
+    }
+
+    .expertise-card h3 {
+      font-family: var(--serif);
+      font-size: 25px;
+      font-weight: 400;
+      margin-top: 25px;
+    }
+
+    .expertise-card p {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.9;
+      margin-top: 12px;
+    }
+
+    /* Editorial image */
+
+    .visual-break {
+      padding: 100px 0;
+    }
+
+    .visual-break-frame {
+      height: 390px;
+      position: relative;
+      overflow: hidden;
+      background: #d9ded4;
+    }
+
+    .visual-break-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .visual-break-caption {
+      position: absolute;
+      bottom: 28px;
+      left: 30px;
+      background: rgba(246, 245, 239, .92);
+      padding: 13px 20px;
+      color: var(--green);
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: 19px;
+    }
+
+    /* Selected writing */
+
+    .writing {
+      padding: 35px 0 125px;
+    }
+
+    .writing-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 30px;
+      margin-bottom: 50px;
+    }
+
+    .writing-list {
+      border-top: 1px solid var(--line);
+    }
+
+    .writing-item {
+      display: grid;
+      grid-template-columns: 75px 1fr 40px;
+      align-items: center;
+      gap: 20px;
+      padding: 25px 10px;
+      border-bottom: 1px solid var(--line);
+      transition: padding .25s ease, background .25s ease;
+    }
+
+    .writing-item:hover {
+      padding-left: 20px;
+      background: rgba(255, 254, 250, .55);
+    }
+
+    .writing-index {
+      color: var(--orange);
+      font-family: var(--serif);
+      font-size: 17px;
+    }
+
+    .writing-item h3 {
+      font-family: var(--serif);
+      font-weight: 400;
+      font-size: clamp(19px, 2.5vw, 25px);
+      line-height: 1.35;
+    }
+
+    .writing-item p {
+      color: var(--muted);
+      font-size: 11px;
+      letter-spacing: .5px;
+      margin-top: 7px;
+    }
+
+    .writing-arrow {
+      width: 35px;
+      height: 35px;
+      border: 1px solid #d4d8ce;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      color: var(--green);
+      transition: .25s ease;
+    }
+
+    .writing-item:hover .writing-arrow {
+      background: var(--green);
+      color: white;
+      border-color: var(--green);
+      transform: rotate(45deg);
+    }
+
+    /* Writing philosophy */
+
+    .philosophy {
+      background: var(--green);
+      color: var(--white);
+      padding: 105px 0;
+    }
+
+    .philosophy-grid {
+      display: grid;
+      grid-template-columns: .8fr 1.2fr;
+      gap: 90px;
+      align-items: center;
+    }
+
+    .philosophy .eyebrow {
+      color: #d7dfd5;
+    }
+
+    .philosophy h2 {
+      font-family: var(--serif);
+      font-size: clamp(35px, 5vw, 55px);
+      line-height: 1.2;
+      font-weight: 400;
+      margin-top: 20px;
+    }
+
+    .philosophy h2 em {
+      color: #d7a17c;
+    }
+
+    .philosophy-copy {
+      color: #d3dbd3;
+      font-size: 15px;
+      line-height: 2;
+    }
+
+    .philosophy-copy p + p {
+      margin-top: 20px;
+    }
+
+    /* Contact */
+
+    .contact {
+      padding: 120px 0 90px;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .contact h2 {
+      font-family: var(--serif);
+      font-size: clamp(43px, 6vw, 70px);
+      font-weight: 400;
+      line-height: 1.1;
+      letter-spacing: -2px;
+      margin-top: 22px;
+    }
+
+    .contact h2 em {
+      color: var(--green);
+    }
+
+    .contact-description {
+      color: var(--muted);
+      font-size: 14px;
+      max-width: 430px;
+      margin-top: 20px;
+      line-height: 1.9;
+    }
+
+    .contact-links {
+      margin-top: 35px;
+      display: flex;
+      flex-direction: column;
+      gap: 17px;
+    }
+
+    .contact-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      color: var(--green);
+      font-size: 14px;
+      width: fit-content;
+      transition: color .2s ease;
+    }
+
+    .contact-row:hover {
+      color: var(--orange);
+    }
+
+    .contact-icon {
+      width: 37px;
+      height: 37px;
+      display: grid;
+      place-items: center;
+      border: 1px solid #d6d9d0;
+      border-radius: 50%;
+    }
+
+    .contact-icon svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    .closing-image {
+      position: relative;
+      background: #e5e2d8;
+      padding: 12px;
+      transform: rotate(-2deg);
+    }
+
+    .closing-image img {
+      width: 100%;
+      height: 360px;
+      object-fit: cover;
+    }
+
+    .closing-note {
+      position: absolute;
+      right: -18px;
+      bottom: 30px;
+      background: var(--white);
+      padding: 14px 20px;
+      font-family: var(--serif);
+      font-style: italic;
+      color: var(--green);
+      font-size: 18px;
+      box-shadow: 0 10px 30px rgba(32,45,39,.1);
+    }
+
+    /* Social links */
+
+    .social-section {
+      border-top: 1px solid var(--line);
+      padding: 35px 0;
+    }
+
+    .social-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 25px;
+    }
+
+    .social-label {
+      color: var(--muted);
+      font-size: 11px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .social-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      padding: 10px 15px;
+      border: 1px solid var(--line);
+      border-radius: 3px;
+      color: var(--green);
+      font-size: 12px;
+      transition: .25s ease;
+    }
+
+    .social-link:hover {
+      background: var(--green);
+      color: white;
+      border-color: var(--green);
+      transform: translateY(-2px);
+    }
+
+    .social-link svg {
+      width: 15px;
+      height: 15px;
+      fill: currentColor;
+    }
+
+    /* Footer */
+
+    footer {
+      padding: 24px 0;
+      background: var(--paper-dark);
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    footer p {
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    .footer-brand {
+      font-family: var(--serif);
+      font-size: 18px;
+      color: var(--green);
+    }
+
+    /* Animations */
+
+    @keyframes rise {
+      from {
+        opacity: 0;
+        transform: translateY(22px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(25px);
+      transition: opacity .7s ease, transform .7s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Responsive */
+
+    @media (max-width: 850px) {
+      .container {
+        width: min(100% - 42px, var(--max-width));
+      }
+
+      .hero {
+        padding: 70px 0 85px;
+      }
+
+      .hero-grid {
+        gap: 45px;
+      }
+
+      .hero h1 {
+        font-size: 60px;
+      }
+
+      .portrait-frame img {
+        height: 390px;
+      }
+
+      .about-grid,
+      .philosophy-grid,
+      .contact-grid {
+        gap: 45px;
+      }
+
+      .expertise-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 650px) {
+      .navbar {
+        height: 70px;
+      }
+
+      .container {
+        width: calc(100% - 38px);
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 69px;
+        left: 0;
+        right: 0;
+        background: var(--paper);
+        padding: 22px;
+        border-bottom: 1px solid var(--line);
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+      }
+
+      .nav-links.open {
+        display: flex;
+      }
+
+      .hero {
+        padding: 65px 0 75px;
+      }
+
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 55px;
+      }
+
+      .hero h1 {
+        font-size: clamp(51px, 13vw, 68px);
+        letter-spacing: -2.5px;
+      }
+
+      .hero-visual {
+        max-width: 320px;
+        justify-self: center;
+        margin-right: 10px;
+      }
+
+      .portrait-frame img {
+        height: 400px;
+      }
+
+      .portrait-note {
+        left: -20px;
+      }
+
+      .strip-inner {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .about,
+      .expertise,
+      .contact {
+        padding: 80px 0;
+      }
+
+      .about-grid,
+      .philosophy-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .expertise-header,
+      .writing-header {
+        display: block;
+      }
+
+      .expertise-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .expertise-card {
+        min-height: auto;
+      }
+
+      .visual-break {
+        padding: 65px 0;
+      }
+
+      .visual-break-frame {
+        height: 260px;
+      }
+
+      .writing {
+        padding: 20px 0 80px;
+      }
+
+      .writing-item {
+        grid-template-columns: 35px 1fr 30px;
+        gap: 10px;
+        padding: 20px 2px;
+      }
+
+      .writing-item h3 {
+        font-size: 19px;
+      }
+
+      .philosophy {
+        padding: 80px 0;
+      }
+
+      .closing-image {
+        max-width: 360px;
+        margin: 10px auto;
+      }
+
+      .closing-image img {
+        height: 300px;
+      }
+
+      .social-inner,
+      .footer-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .social-links {
+        gap: 8px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        scroll-behavior: auto !important;
+        animation-duration: .01ms !important;
+        transition-duration: .01ms !important;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-    <header>
-        <h1>Akhil G Nair</h1>
-        <p>Content Writer | SEO Enthusiast</p>
-    </header>
+  <!-- NAVIGATION -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a class="brand" href="#home">Akhil<span>.</span></a>
 
-    <main>
-        <section>
-            <h2>About Me</h2>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+        ☰
+      </button>
+
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about">About</a></li>
+          <li><a href="#expertise">Expertise</a></li>
+          <li><a href="#writing">Selected Writing</a></li>
+          <li><a href="#contact" class="nav-contact">Let's Talk ↗</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- HERO -->
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+
+        <div class="hero-copy">
+          <div class="hero-location">
+            <span class="location-dot"></span>
+            CALICUT, KERALA · INDIA
+          </div>
+
+          <div class="eyebrow">CONTENT WRITER & STORYTELLER</div>
+
+          <h1>
+            Words that<br>
+            make ideas<br>
+            <em>mean something.</em>
+          </h1>
+
+          <p class="hero-description">
+            I'm Akhil G Nair. A content writer interested in the little
+            details that make a story worth reading. I work across SEO,
+            business, technology and creative content, turning ideas
+            into writing that feels clear, useful and human.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#writing" class="button-primary">
+              Explore my writing <span>↗</span>
+            </a>
+
+            <a href="#about" class="text-link">A little about me</a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-decoration"></div>
+
+          <div class="portrait-frame">
+            <img
+              src="https://drive.google.com/thumbnail?id=13H4mEbWBDm0Xc_GADdZznXWEonXZIMkf&sz=w1200"
+              alt="Portrait of Akhil G Nair"
+              loading="eager"
+            >
+          </div>
+
+          <div class="portrait-note">
+            <small>A writer's corner</small>
+            <strong>Curious by nature.</strong>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- INTRO STRIP -->
+    <section class="intro-strip">
+      <div class="container strip-inner">
+        <span>Research before writing.</span>
+        <b class="strip-symbol">✳</b>
+        <span>Clarity over complexity.</span>
+        <b class="strip-symbol">✳</b>
+        <span>Stories with a purpose.</span>
+      </div>
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="about reveal" id="about">
+      <div class="container about-grid">
+
+        <div class="about-label">
+          <div class="eyebrow">A LITTLE INTRODUCTION</div>
+        </div>
+
+        <div class="about-content">
+          <h2 class="section-heading">
+            I like finding the story<br>
+            <em>behind the subject.</em>
+          </h2>
+
+          <p>
+            Writing, for me, has always been more than putting words
+            together. It's about understanding something well enough
+            to explain it in a way that makes sense to someone else.
+          </p>
+
+          <p>
+            My work moves between search-driven articles, business
+            and technology topics, brand communication and creative
+            storytelling. Each has a different purpose, but the
+            thinking behind them remains the same: understand the
+            subject, find the right angle and make every word count.
+          </p>
+
+          <p>
+            I'm particularly interested in how people interact with
+            information, how businesses communicate their ideas and
+            how good writing can make even a complicated subject feel
+            approachable.
+          </p>
+
+          <div class="about-signature">Akhil G Nair.</div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- EXPERTISE -->
+    <section class="expertise reveal" id="expertise">
+      <div class="container">
+
+        <div class="expertise-header">
+          <div>
+            <div class="eyebrow">WHAT I WORK ON</div>
+            <h2 class="section-heading" style="margin-top: 17px;">
+              Different subjects.<br>
+              <em>One writing approach.</em>
+            </h2>
+          </div>
+
+          <p class="section-intro">
+            Good content starts with understanding the audience
+            and knowing what the writing needs to achieve.
+          </p>
+        </div>
+
+        <div class="expertise-grid">
+
+          <article class="expertise-card">
+            <span class="card-number">01 /</span>
+            <h3>SEO Content Writing</h3>
             <p>
-                I'm a content writer interested in business,
-                technology, SEO and storytelling. I enjoy turning
-                ideas and information into clear, engaging content.
+              Search-focused articles and blogs built around
+              keyword research, search intent, content structure
+              and useful information.
             </p>
-        </section>
+          </article>
 
-        <section>
-            <h2>Areas of Expertise</h2>
-            <ul>
-                <li>SEO Content Writing</li>
-                <li>Business and Technology Writing</li>
-                <li>Creative Copywriting</li>
-                <li>Content Research</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>My Writing Portfolio</h2>
+          <article class="expertise-card">
+            <span class="card-number">02 /</span>
+            <h3>Business & Technology</h3>
             <p>
-                <a href="https://github.com/akhilgnair169">
-                    Explore My GitHub Projects
-                </a>
+              Making complex ideas easier to understand through
+              research-led writing, industry insights and
+              straightforward explanations.
             </p>
-        </section>
-    </main>
+          </article>
 
-    <footer>
-        <p>© 2026 Akhil G Nair</p>
-    </footer>
+          <article class="expertise-card">
+            <span class="card-number">03 /</span>
+            <h3>Creative Copywriting</h3>
+            <p>
+              Brand stories, campaign concepts, social media
+              copy and words that give a brand its own voice.
+            </p>
+          </article>
+
+          <article class="expertise-card">
+            <span class="card-number">04 /</span>
+            <h3>Content Research</h3>
+            <p>
+              Finding credible sources, understanding subjects
+              and building a strong foundation before the
+              first draft begins.
+            </p>
+          </article>
+
+          <article class="expertise-card">
+            <span class="card-number">05 /</span>
+            <h3>Blog & Article Writing</h3>
+            <p>
+              Informative, reader-friendly articles that bring
+              together useful details, a natural flow and
+              a clear point of view.
+            </p>
+          </article>
+
+          <article class="expertise-card">
+            <span class="card-number">06 /</span>
+            <h3>Brand Communication</h3>
+            <p>
+              Finding the right words to communicate what a
+              brand stands for, what it offers and why
+              people should care.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- SECOND IMAGE -->
+    <section class="visual-break reveal">
+      <div class="container">
+        <div class="visual-break-frame">
+          <img
+            src="https://drive.google.com/thumbnail?id=15R3rTDxqQ3KX-qvofQSmOr5H2WDIYijE&sz=w1600"
+            alt="A visual from Akhil's personal portfolio"
+            loading="lazy"
+          >
+          <div class="visual-break-caption">
+            Every subject has a perspective worth exploring.
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- SELECTED WRITING -->
+    <section class="writing reveal" id="writing">
+      <div class="container">
+
+        <div class="writing-header">
+          <div>
+            <div class="eyebrow">A FEW THINGS I'VE WRITTEN</div>
+            <h2 class="section-heading" style="margin-top: 17px;">
+              Selected <em>writing.</em>
+            </h2>
+          </div>
+
+          <p class="section-intro">
+            A selection of published articles exploring
+            places, infrastructure, culture and everyday life.
+          </p>
+        </div>
+
+        <div class="writing-list">
+
+          <a class="writing-item"
+             href="https://www.homes247.in/blogs/kozhikode-wayanad-tunnel-road-802"
+             target="_blank" rel="noopener noreferrer">
+
+            <span class="writing-index">01</span>
+
+            <div>
+              <h3>Kozhikode–Wayanad Tunnel Road</h3>
+              <p>INFRASTRUCTURE · REAL ESTATE · HOMES247</p>
+            </div>
+
+            <span class="writing-arrow">↗</span>
+          </a>
+
+
+          <a class="writing-item"
+             href="https://www.homes247.in/blogs/palakkad-kozhikode-greenfield-highway-829"
+             target="_blank" rel="noopener noreferrer">
+
+            <span class="writing-index">02</span>
+
+            <div>
+              <h3>Palakkad–Kozhikode Greenfield Highway</h3>
+              <p>INFRASTRUCTURE · CONNECTIVITY · HOMES247</p>
+            </div>
+
+            <span class="writing-arrow">↗</span>
+          </a>
+
+
+          <a class="writing-item"
+             href="https://www.homes247.in/blogs/kozhikode-first-city-of-literature-in-india-795"
+             target="_blank" rel="noopener noreferrer">
+
+            <span class="writing-index">03</span>
+
+            <div>
+              <h3>Kozhikode: India's First City of Literature</h3>
+              <p>CULTURE · CITY STORIES · HOMES247</p>
+            </div>
+
+            <span class="writing-arrow">↗</span>
+          </a>
+
+
+          <a class="writing-item"
+             href="https://www.homes247.in/blogs/street-food-and-restaurants-in-calicut-634"
+             target="_blank" rel="noopener noreferrer">
+
+            <span class="writing-index">04</span>
+
+            <div>
+              <h3>Street Food and Restaurants in Calicut</h3>
+              <p>FOOD · LOCAL CULTURE · HOMES247</p>
+            </div>
+
+            <span class="writing-arrow">↗</span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- PHILOSOPHY -->
+    <section class="philosophy reveal">
+      <div class="container philosophy-grid">
+
+        <div>
+          <div class="eyebrow">A THOUGHT ON WRITING</div>
+
+          <h2>
+            Not just more words.<br>
+            <em>The right ones.</em>
+          </h2>
+        </div>
+
+        <div class="philosophy-copy">
+          <p>
+            I believe good writing should respect the reader's time.
+            It should explain without overwhelming, inform without
+            sounding mechanical and tell a story without losing sight
+            of the point.
+          </p>
+
+          <p>
+            That means asking questions, doing the research,
+            looking at things from different angles and knowing
+            when a simpler sentence is the better sentence.
+          </p>
+
+          <p>
+            Because at the end of the day, the best writing isn't
+            necessarily the most complicated. It's the writing
+            that stays with you.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="contact reveal" id="contact">
+      <div class="container contact-grid">
+
+        <div>
+          <div class="eyebrow">HAVE SOMETHING IN MIND?</div>
+
+          <h2>
+            Let's make<br>
+            something <em>worth reading.</em>
+          </h2>
+
+          <p class="contact-description">
+            Have a project, an opportunity or simply an idea
+            you'd like to discuss? I'd be happy to hear from you.
+          </p>
+
+          <div class="contact-links">
+
+            <a class="contact-row" href="tel:+919847219280">
+              <span class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                  <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.4 19.4 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 8.9a16 16 0 0 0 6 6l1.2-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.8 2.1Z"/>
+                </svg>
+              </span>
+              +91 98472 19280
+            </a>
+
+            <a class="contact-row" href="mailto:akhilganeshnair169@gmail.com">
+              <span class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                  <rect x="2" y="4" width="20" height="16" rx="2"/>
+                  <path d="m22 7-10 7L2 7"/>
+                </svg>
+              </span>
+              akhilganeshnair169@gmail.com
+            </a>
+
+          </div>
+        </div>
+
+        <div class="closing-image">
+          <img
+            src="https://drive.google.com/thumbnail?id=17gNdOFTCGSaRf4XvDuZFRVdi19eGGi_R&sz=w1200"
+            alt="A final visual from Akhil's portfolio"
+            loading="lazy"
+          >
+
+          <div class="closing-note">
+            Until the next story.
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- SOCIAL LINKS -->
+    <section class="social-section">
+      <div class="container social-inner">
+
+        <p class="social-label">Find me elsewhere</p>
+
+        <div class="social-links">
+
+          <a class="social-link"
+             href="https://www.instagram.com/akhil__a_g_n"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Instagram">
+
+            <svg viewBox="0 0 24 24">
+              <rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/>
+              <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/>
+              <circle cx="17.5" cy="6.5" r="1"/>
+            </svg>
+            Instagram
+          </a>
+
+
+          <a class="social-link"
+             href="https://facebook.com/akhil.gnair.169"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Facebook">
+
+            <svg viewBox="0 0 24 24">
+              <path d="M13.5 21v-8h2.8l.4-3h-3.2V8.1c0-.9.3-1.6 1.6-1.6h1.7V3.8c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3V10H7.3v3h2.8v8h3.4Z"/>
+            </svg>
+            Facebook
+          </a>
+
+
+          <a class="social-link"
+             href="https://www.blogger.com/profile/12530826281466811924"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Blogger">
+
+            <svg viewBox="0 0 24 24">
+              <path d="M6 3h7a5 5 0 0 1 5 5v1h1a2 2 0 0 1 2 2v5a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8a5 5 0 0 1 3-5Zm2 6a1 1 0 0 0 0 2h5a1 1 0 0 0 0-2H8Zm0 5a1 1 0 0 0 0 2h7a1 1 0 0 0 0-2H8Z"/>
+            </svg>
+            Blogger
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-inner">
+      <div class="footer-brand">Akhil G Nair.</div>
+
+      <p>© <span id="year"></span> Akhil G Nair. All words reserved.</p>
+
+      <p>Made with thought, and a little coffee.</p>
+    </div>
+  </footer>
+
+
+  <script>
+    // Mobile navigation
+    const menuToggle = document.getElementById("menuToggle");
+    const navLinks = document.getElementById("navLinks");
+
+    menuToggle.addEventListener("click", () => {
+      const isOpen = navLinks.classList.toggle("open");
+      menuToggle.setAttribute("aria-expanded", isOpen);
+      menuToggle.textContent = isOpen ? "×" : "☰";
+    });
+
+    // Close mobile menu after selecting a section
+    document.querySelectorAll(".nav-links a").forEach(link => {
+      link.addEventListener("click", () => {
+        navLinks.classList.remove("open");
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.textContent = "☰";
+      });
+    });
+
+    // Reveal sections on scroll
+    const revealObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll(".reveal").forEach(section => {
+      revealObserver.observe(section);
+    });
+
+    // Automatically update footer year
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 
 </body>
 </html>
