@@ -4,12 +4,12 @@ The objective is simple: create content that answers what people are searching f
 
 Areas of Focus:
 
-[a)Search Engine Optimisation (SEO)]
-[b)Keyword Research]
-[c)Search Intent Analysis]
-[d)On-page SEO]
-[e)Long-form Blog Writing]
-[f)Content Research and Structuring]
+- Search Engine Optimisation (SEO)
+- Keyword Research
+- Search Intent Analysis
+- On-page SEO
+- Long-form Blog Writing
+- Content Research and Structuring
 
 Top blog posts tarketing Calicut/Kozhikode locality:
 
